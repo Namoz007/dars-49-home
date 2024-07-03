@@ -30,6 +30,9 @@ class _HomeScreenState extends State<HomeScreen> {
       if (day!.day == DateTime.now().day) {
         LocalNotificationsServices.dayNotification();
         day = DateTime.now();
+        setState(() {
+
+        });
       }
     }
   }
